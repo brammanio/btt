@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>BTT</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-menu' ></i>
+      <span class="logo_name">BTT</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html" onclick="show()">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html" onclick="show()">Dashboard</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="icon-link">
+          <a href="wemo.html" target="myFrame" onclick="hide()">
+            <i class='bx bx-home-circle' ></i>
+            <span class="link_name">Wemo</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li>
+            <a class="link_name" href="wemo.html" target="myFrame" onclick="hide()">Wemo</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div class="icon-link">
+          <a href="docks.html" target="myFrame" onclick="hide()">
+            <i class='bx bx-laptop'></i>
+            <span class="link_name">Docks</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="docks.html" target="myFrame" onclick="hide()">Docks</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="icon-link">
+          <a href="#">
+            <i class='bx bx-droplet' ></i>
+            <span class="link_name">Phyn</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Phyn</a></li>
+        </ul>
+      </li>
+      <li>
+       <div class="profile-details">
+          <div class="profile-content">
+            <img src="images/profile.jpg" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name">Cliff Manio</div>
+            <div class="job">Web Dev</div>
+          </div>
+          <i class='bx bx-log-out' ></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div id="section-one">
+      <div class="home-content">
+        <span class="text">Welcome to tech resource website</span> 
+      </div>
+      <p>I created a website for the team with all of the links to the devices that we support.</p>
+    </div>
+    <iframe name="myFrame"></iframe>
+  </section>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
