@@ -1,0 +1,243 @@
+ /* *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; } // required */
+ html{
+    overflow-x: hidden;
+    } 
+    
+    .content {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    
+    .content > h2 {
+        clear: both;
+        margin: 0;
+        padding: 4em 1% 0;
+        color: #484B54;
+        font-weight: 800;
+        font-size: 1.5em;
+    }
+    
+    .content > h2:first-child {
+        padding-top: 0em;
+    }
+    
+     /* Header */
+    
+     .codrops-header {
+        margin: 0 auto;
+        padding: 4em 1em;
+        text-align: center;
+    }
+    
+    .codrops-header h1 {
+        margin: 0;
+        font-weight: 800;
+        font-size: 4em;
+        line-height: 1.3;
+    }
+    
+    .codrops-header h1 span {
+        display: block;
+        padding: 0 0 0.6em 0.1em;
+        color: #74777b;
+        font-weight: 300;
+        font-size: 45%;
+    }
+     
+     
+     .grid {
+        position: relative;
+        margin: 0 auto;
+        padding: 1em 0 4em;
+        max-width: 1000px;
+        list-style: none;
+        text-align: center;
+    }
+    
+    /* Common style */
+    .grid figure {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        margin: 10px 1%;
+        min-width: 320px;
+        max-width: 480px;
+        max-height: 360px;
+        width: 48%;
+    /*	background: #3085a3; */
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .grid figure img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+        opacity: 0.8;
+    }
+    
+    .grid figure figcaption {
+        padding: 2em;
+        color: #000000;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .grid figure figcaption::before,
+    .grid figure figcaption::after {
+        pointer-events: none;
+    }
+    
+    .grid figure figcaption,
+    .grid figure figcaption > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* Anchor will cover the whole item by default */
+    
+    .grid figure figcaption > a {
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+    }
+    
+    .grid figure h2 {
+        word-spacing: -0.15em;
+        font-weight: 300;
+    }
+    
+    .grid figure h2 span {
+        font-weight: 800;
+    }
+    
+    .grid figure h2,
+    .grid figure li {
+        margin: 0;
+    }
+    
+    .grid figure li {
+        list-style: none;
+        font-size: 89.5%;
+    }
+    
+    /***** effect  *****/
+    
+    figure.effect figcaption {
+        text-align: right;
+    }
+    
+    figure.effect h2, 
+    figure.effect p {
+        position: absolute;
+        right: 30px;
+        left: 30px;
+        padding: 10px 0;
+    }
+    
+    figure.effect .list {
+        margin-top: 123px;
+        margin-left: 332px;
+        margin-bottom: 0px;
+        height: 60px;
+        width: 100%;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+    }
+    figure.effect .list a {
+        color: #000000;
+        font-size: 18px;
+        padding: 5px 0;
+        white-space: nowrap;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+    
+    figure.effect li {
+        top: 50px;
+        bottom: 30px;
+        line-height: 1.5;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    
+    figure.effect h2 {
+        top: 30px;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0,20px,0);
+        transform: translate3d(0,20px,0);
+    }
+    
+    figure.effect:hover h2 {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+    
+    figure.effect h2::after {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #000000;
+        content: '';
+        -webkit-transform: translate3d(0,40px,0);
+        transform: translate3d(0,40px,0);
+    }
+    
+    figure.effect h2::after,
+    figure.effect li {
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+    }
+    
+    figure.effect:hover h2::after,
+    figure.effect:hover li {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+    figure.effect img {
+        max-width: none;
+        -webkit-transition: opacity 1s, -webkit-transform 1s;
+        transition: opacity 1s, transform 1s;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    figure.effect:hover img {
+        -webkit-transform: scale3d(1.1,1.1,1);
+        transform: scale3d(1.1,1.1,1);
+    }
+    .grid-container {
+         display: grid;
+        column-gap: 50px;
+        row-gap: 50px;
+    }
+    .grid-list {
+        position: relative;
+        margin: 0 auto;
+        padding: 1em 0 4em;
+        max-width: 1000px;
+        list-style: none;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 50em) {
+        .grid figure {
+            display: inline-block;
+            float: none;
+            margin: 10px auto;
+            width: 100%;
+        }
+    }
