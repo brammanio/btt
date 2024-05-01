@@ -18,9 +18,7 @@ sidebarBtn.addEventListener("click", ()=>{
 
 function hide() {
        document.getElementById('section-one').style.display = 'none'
-       document.getElementById('thunder').style.display = 'none'
      }
 function show() {
        document.getElementById('section-one').style.display = 'block'
-       document.getElementById('thunder').style.display = 'block'
      }
