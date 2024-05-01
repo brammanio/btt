@@ -297,7 +297,9 @@ iframe {
   opacity: 0;
   pointer-events: none;
 }
-.thunder {
+
+/** hotline number **/
+.hotline {
   margin-top: 85px;
   margin-left: 78px;
   margin-bottom: 20px;
@@ -307,10 +309,10 @@ iframe {
   display: flex;
   align-items: center;
 }
-.thunder ul{
+.hotline ul{
 list-style-type: none;
 }
-.thunder li i{
+.hotline li i{
 height: 50px;
 min-width: 78px;
 text-align: center;
@@ -320,7 +322,7 @@ font-size: 70px;
 cursor: pointer;
 transition: all 0.3s ease;
 }
-.thunder li a{
+.hotline li a{
 color: #000000;
 font-size: 15px;
 padding: 5px 0;
