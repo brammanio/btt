@@ -269,7 +269,7 @@ iframe {
 }
 #section-one {
   display: block;
-  padding-bottom: 35px;
+  padding: 5px 0 35px;
 }
 /* wemo logo */
 .wemo-logo-details{
